@@ -1,0 +1,55 @@
+.blueBar {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(210, 180, 150, 1) 20%,
+    rgba(245, 131, 13, 1) 50%,
+    rgba(210, 180, 150, 1) 80%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 2em;
+  transition: bottom 1s ease-in-out;
+}
+.connectButton {
+  border: 1px solid rgba(29, 161, 242, 1);
+  color: rgba(29, 161, 242, 1);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  outline: none;
+  padding: 6px 16px;
+  transition: background-color 0.2s ease-in-out;
+  white-space: nowrap;
+  border-radius: 15px;
+}
+
+.createButton {
+  background-color: rgba(29, 161, 242, 1);
+  border: 1px solid rgba(29, 161, 242, 1);
+  border-radius: 9999px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  outline: none;
+  padding: 6px 16px;
+  transition: background-color 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.blueBar button {
+  margin: 1%;
+
+  right: 10vw;
+}
+.theButtons {
+  margin-left: 80%;
+  margin-top: 1%;
+}

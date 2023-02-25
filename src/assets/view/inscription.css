@@ -1,0 +1,103 @@
+.create {
+  /* display: none; */
+  border: 2px solid rgba(0, 0, 0, 0.031);
+  margin: 1%;
+
+  flex-direction: column;
+  height: 90%;
+  width: 40%;
+  margin: 30%;
+  height: 80%;
+  position: fixed;
+  top: -41vh;
+  border-radius: 3%;
+  background: white;
+  z-index: 1;
+}
+/* croix pour fermer la fenetre */
+.create .x {
+  width: 2%;
+  height: 4%;
+  position: fixed;
+  right: 31%;
+  top: 5%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.create input {
+  width: 60%;
+  height: 8vh;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  border-radius: 10px;
+  border: solid rgb(193, 189, 189);
+  font-size: 1em;
+}
+.create p {
+  margin-bottom: 5%;
+  margin-left: 15%;
+  border-radius: 5px;
+  color: rgb(184, 179, 179);
+  position: fixed;
+  top: 46%;
+  left: 21.5%;
+  font-size: 1em;
+  font-size: 0.8em;
+  padding-bottom: -5%;
+}
+.create h2 {
+  margin-left: 20%;
+  margin-top: 5%;
+  font-size: 2em;
+}
+.create button {
+  background: rgb(135, 132, 132);
+  width: 60%;
+  height: 10%;
+  border-radius: 20px;
+  border: solid white;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-left: 20%;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  border-radius: 2em;
+  margin-top: 1%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: 100%;
+}
+/* body {
+  background: rgba(128, 128, 128, 0.412);
+} */
+
+.validation {
+  font-size: 2em;
+  font-weight: bolder;
+  opacity: 0;
+  top: 1vh;
+  transition: 2s;
+  position: fixed;
+  left: 20%;
+  margin-top: 1%;
+}
+.validationPost {
+  font-size: 2em;
+  font-weight: bolder;
+  opacity: 0;
+  top: 1vh;
+  transition: 2s;
+  position: fixed;
+  left: 20%;
+  margin-top: 1%;
+}
