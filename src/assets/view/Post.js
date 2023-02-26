@@ -14,7 +14,7 @@ function Post(props) {
         method: "GET",
       };
       let reponse = await fetch(
-        `https://social-network-api.osc-fr1.scalingo.io/communitize/posts`,
+        `https://social-network-api.osc-fr1.scalingo.io/communitizeFinal/posts`,
         options
       );
       let donnees = await reponse.json();

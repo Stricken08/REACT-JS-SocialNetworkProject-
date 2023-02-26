@@ -18,7 +18,7 @@ function Info() {
     };
 
     let reponse = await fetch(
-      `https://social-network-api.osc-fr1.scalingo.io/communitize/user`,
+      `https://social-network-api.osc-fr1.scalingo.io/communitizeFinal/user`,
       options
     );
     let donnees = await reponse.json();

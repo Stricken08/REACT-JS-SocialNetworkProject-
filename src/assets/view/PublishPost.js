@@ -18,7 +18,7 @@ function PublishPost() {
   function handleClick(event) {
     event.preventDefault();
 
-    fetch("https://social-network-api.osc-fr1.scalingo.io/communitize/post", {
+    fetch("https://social-network-api.osc-fr1.scalingo.io/communitizeFinal/post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,9 +45,10 @@ function PublishPost() {
       <div className="formulairePost">
         <form action="">
           <input
+          className="inputTitle"
             required
             onChange={handleChange("title")}
-            placeholder="title"
+            placeholder="Nom de vote Post"
             type="text"
           />
           <input

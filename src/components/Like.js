@@ -8,7 +8,7 @@ function Like(props) {
 
   function click() {
     fetch(
-      "https://social-network-api.osc-fr1.scalingo.io/communitize/post/like",
+      "https://social-network-api.osc-fr1.scalingo.io/communitizeFinal/post/like",
       {
         method: "POST",
         headers: {

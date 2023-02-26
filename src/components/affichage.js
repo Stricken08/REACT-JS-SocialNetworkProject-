@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+//afficher Nom et prenom sur page d'acceuil si connection ok 
 function Affichage() {
   const token = localStorage.getItem("token");
   const [firstname, setFirstname] = useState("");
@@ -15,7 +15,7 @@ function Affichage() {
     };
 
     let reponse = await fetch(
-      `https://social-network-api.osc-fr1.scalingo.io/communitize/user`,
+      `https://social-network-api.osc-fr1.scalingo.io/communitizeFinal/user`,
       options
     );
     let donnees = await reponse.json();

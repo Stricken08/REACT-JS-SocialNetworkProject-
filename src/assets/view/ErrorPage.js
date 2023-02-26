@@ -4,7 +4,7 @@ function ErrorPage() {
   //page erreur
   return (
     <div className="rien">
-      <h1>NOUS N'AVONS RIEN EN STOCK MALHEURESEMENT...</h1>
+      <h1>Erreur...</h1>
     </div>
   );
 }
