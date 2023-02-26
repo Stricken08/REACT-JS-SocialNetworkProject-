@@ -74,8 +74,7 @@ form {
   color: white;
   display: flex;
   justify-content: center;
-  background-image: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-size: 100%;
+background: white;
 }
 /* body {
   background: rgba(128, 128, 128, 0.412);
