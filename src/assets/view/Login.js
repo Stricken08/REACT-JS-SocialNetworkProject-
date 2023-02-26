@@ -13,7 +13,7 @@ function Login() {
   };
 
   function handleClick() {
-    fetch("https://social-network-api.osc-fr1.scalingo.io/communitizeFinal/login", {
+    fetch("https://social-network-api.osc-fr1.scalingo.io/communitize/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

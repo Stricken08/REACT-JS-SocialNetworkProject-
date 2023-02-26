@@ -14,7 +14,7 @@ function Post(props) {
         method: "GET",
       };
       let reponse = await fetch(
-        `https://social-network-api.osc-fr1.scalingo.io/communitizeFinal/posts`,
+        `https://social-network-api.osc-fr1.scalingo.io/communitize/posts`,
         options
       );
       let donnees = await reponse.json();
@@ -30,7 +30,7 @@ function Post(props) {
       {post.map((objet, index) => (
         <div className="onePost" key={index}>
           <h3>{objet.title}</h3>
-          <p>
+          <p >
             {objet.content} <br />
           </p>
           <div className="like">
@@ -46,7 +46,10 @@ function Post(props) {
                 <p>{objet.firstname}</p>
                 <p>{objet.lastname}</p>
               </div>
-              <p>{objet.content}</p>
+              <p>{objet.content}
+                </p>
+            
+              
             </div>
           ))}
         </div>

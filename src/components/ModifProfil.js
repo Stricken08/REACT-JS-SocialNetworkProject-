@@ -17,17 +17,10 @@ function ModifProfil() {
     occupation: "",
   });
   const handleChange = (key) => (e) => {
-    if (key === "firstname") {
-      setFirstname(e.target.value);
-    } else if (key === "lastname") {
-      setLastname(e.target.value);
-    } else if (key === "email") {
-      setEmail(e.target.value);
-    } else if (key === "age") {
-      setAge(e.target.value);
-    } else if (key === "occupation") {
-      setOccupation(e.target.value);
-    }
+    setData({
+      ...data,
+      [key]: e.target.value
+    });
   };
   async function afficherProfil() {
     let options = {
@@ -46,7 +39,7 @@ function ModifProfil() {
     };
 
     let reponse = await fetch(
-      `https://social-network-api.osc-fr1.scalingo.io/communitizeFinal/user`,
+      `https://social-network-api.osc-fr1.scalingo.io/communitize/user`,
       options
     );
     let donnees = await reponse.json();
@@ -66,24 +59,25 @@ function ModifProfil() {
       <BarreNav />
       <div className="create3">
         <form action="">
-          <input
-            onChange={handleChange("firstname")}
-            placeholder="Prénom"
-            type="text"
-          />
-          <input
+        <input
+  name="firstname"
+  onChange={handleChange("firstname")}
+  placeholder="Prénom"
+  type="text"
+/>
+          <input name="lastname"
             onChange={handleChange("lastname")}
             placeholder="Nom"
             type="text"
           />
 
-          <input
+          <input name="email"
             onChange={handleChange("email")}
             placeholder="Adresse Mail"
             type="text"
           />
-          <input onChange={handleChange("age")} placeholder="age" type="text" />
-          <input
+          <input name="age" onChange={handleChange("age")} placeholder="age" type="text" />
+          <input name="occupation"
             onChange={handleChange("occupation")}
             placeholder="Occupation"
             type="text"

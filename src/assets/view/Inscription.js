@@ -21,7 +21,7 @@ function Inscription(props) {
     event.preventDefault();
 
     await fetch(
-      "https://social-network-api.osc-fr1.scalingo.io/communitizeFinal/register",
+      "https://social-network-api.osc-fr1.scalingo.io/communitize/register",
       {
         method: "POST",
         headers: {

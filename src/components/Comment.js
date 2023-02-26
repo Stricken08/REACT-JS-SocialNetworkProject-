@@ -18,7 +18,7 @@ function Comment(props) {
     event.preventDefault();
 
     fetch(
-      "https://social-network-api.osc-fr1.scalingo.io/communitizeFinal/post/comment",
+      "https://social-network-api.osc-fr1.scalingo.io/communitize/post/comment",
       {
         method: "POST",
         headers: {

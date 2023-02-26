@@ -18,7 +18,7 @@ function PublishPost() {
   function handleClick(event) {
     event.preventDefault();
 
-    fetch("https://social-network-api.osc-fr1.scalingo.io/communitizeFinal/post", {
+    fetch("https://social-network-api.osc-fr1.scalingo.io/communitize/post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
