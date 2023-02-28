@@ -1,2 +1,2 @@
-# REACT-JS-SocialNetworkProject-
+# REACT-JS-SocialNetworkProject-!!!Style under construction!!!
 
